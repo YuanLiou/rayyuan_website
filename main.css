@@ -1,3 +1,34 @@
 .main_content {
-    text-align: center   
+    margin-left: 250px;    /*not sure*/
+}
+
+#footer {
+    width: 100%;
+    float: left;
+    clear: left;
+    position: relative;
+    display: inline;
+    background-color: #B3B3B3;
+    margin-bottom: 5px;
+    text-align: right;
+    border-radius: 4px;
+    padding: 3px 8px 3px 0px;
+}
+
+#developing_word {
+    color: white;
+    font-style: italic;
+    font-size: 0.8em;
+    margin-right: 12px;
+}
+
+#profile_photo {
+    float: left;
+}
+
+#my_photo {
+    max-width: 433px;
+    max-height: 1200px;
+    width: auto;
+    height: 600px;
 }
