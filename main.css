@@ -1,34 +1,51 @@
-.main_content {
-    margin-left: 250px;    /*not sure*/
+/* screen split size follow Bootsraps. */
+
+/* 
+** small screen
+*/
+@media screen and (max-width: 576px) {
+    .main_content {
+        width: 100%;
+        bottom: 0;
+        position: relative;
+        padding-top: 5px;
+        padding-left: 12px;
+        background: rgba(255, 255, 255, 0.95);
+    }
+    
+    #footer {
+        width: 100%;
+        float: left;
+        clear: left;
+        position: relative;
+        display: inline;
+        margin-bottom: 5px;
+        text-align: left;
+        padding: 3px 8px 3px 0px;
+    }
+    
+    #developing_word {
+        color: gray;
+        font-style: italic;
+        font-size: 0.8em;
+        margin-right: 12px;
+    }
+    
+    #xlarge_photo {
+        display: none;
+    }
+
+    #small_photo {
+        max-height: 161px;
+        max-width: 161px;
+        width: auto;
+    }
 }
 
-#footer {
-    width: 100%;
-    float: left;
-    clear: left;
-    position: relative;
-    display: inline;
-    background-color: #B3B3B3;
-    margin-bottom: 5px;
-    text-align: right;
-    border-radius: 4px;
-    padding: 3px 8px 3px 0px;
-}
-
-#developing_word {
-    color: white;
-    font-style: italic;
-    font-size: 0.8em;
-    margin-right: 12px;
-}
-
-#profile_photo {
-    float: left;
-}
-
-#my_photo {
-    max-width: 433px;
-    max-height: 1200px;
-    width: auto;
-    height: 600px;
+/*
+** Medium
+ */
+@media screen and (max-width: 768px) {
+    #small_photo {
+    }
 }
