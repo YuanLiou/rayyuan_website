@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Prototype Endless Runner</title>
+    <link rel="stylesheet" type="text/css" href="runner.css" />
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/prototype_01.json");
@@ -12,7 +13,26 @@
   <body>
     <div id="gameContainer" style="width: 960px; height: 600px; margin: auto"></div>
     <br>
+    <div id="hint_section">
+      <div class="small_content" id="help_section">
+          <p><strong>mouse-left button</strong> or <strong>space</strong> to jump.</p>
+          <p>tips:</p>
+      </div>
+      <ul>
+          <li>Double jumps.</li>
+          <li>Special Diamonds for special power in 10 seconds:</li>
+          <ul>
+              <li>Green Diamond: Double points</li>
+              <li>Blue Diamond: Remove Spikes</li>
+          </ul>
+      </ul>
+    </div>
+    <br>
+    <h4>Changelog</h4>
+    <div class="small_content">
+    <p>ver 0.2(20170908): add two kinds of power diamonds!</p>
     <p>ver 0.1(20170907): first prototype.</p>
-    <a href="index.html">back</a>
+    </div>
+    <a href="index.html">back to my profile</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/YuanLiou/ProjectExdo/">source code</a>
   </body>
 </html>
