@@ -1,5 +1,15 @@
 /* screen split size follow Bootsraps. */
 
+
+/*
+** Medium
+ */
+@media screen and (max-width: 768px) {
+    #small_photo {
+        display: none;
+    }
+}
+
 /* 
 ** small screen
 */
@@ -36,16 +46,9 @@
     }
 
     #small_photo {
+        display: block;
         max-height: 161px;
         max-width: 161px;
-        width: auto;
     }
 }
 
-/*
-** Medium
- */
-@media screen and (max-width: 768px) {
-    #small_photo {
-    }
-}
