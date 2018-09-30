@@ -34,11 +34,15 @@
 
 #developing_word {
     width: 100%;
-    text-align: right;
+    text-align: left;
     color: gray;
     font-style: italic;
     font-size: 0.8em;
     margin-right: 12px;
+    float: left;
+}
+
+#site_states {
     float: left;
 }
 
@@ -74,11 +78,15 @@
 
     #developing_word {
         width: 100%;
-        text-align: right;
+        text-align: left;
         color: gray;
         font-style: italic;
         font-size: 0.8em;
         margin-right: 12px;
+        float: left;
+    }
+
+    #site_states {
         float: left;
     }
 }
@@ -120,7 +128,11 @@
         font-style: italic;
         font-size: 0.8em;
         margin-right: 12px;
-        float: none;
+        float: left;
+    }
+
+    #site_states {
+        float: left;
     }
 }
 
@@ -162,7 +174,11 @@
         font-style: italic;
         font-size: 0.8em;
         margin-right: 12px;
-        float: none;
+        float: left;
+    }
+
+    #site_states {
+        float: left;
     }
 }
 
