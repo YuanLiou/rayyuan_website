@@ -25,7 +25,6 @@
     max-height: 600px;
     max-width: 216px;
     float: left;
-    padding-bottom: 10vmin;
 }
 
 #small_photo {
@@ -44,6 +43,16 @@
 
 #site_states {
     float: left;
+}
+
+#padding_area {
+    height: 700px;
+    width: 16px;
+    float: left;
+}
+
+ul {
+    overflow: hidden;
 }
 
 /*
@@ -88,6 +97,16 @@
 
     #site_states {
         float: left;
+    }
+
+    #padding_area {
+        height: 700px;
+        width: 16px;
+        float: left;
+    }
+
+    ul {
+        overflow: hidden;
     }
 }
 
@@ -134,6 +153,15 @@
     #site_states {
         float: left;
     }
+
+    #padding_area {
+        display: none
+    }
+
+    ul {
+        overflow: hidden;
+    }
+
 }
 
 /* 
@@ -179,6 +207,14 @@
 
     #site_states {
         float: left;
+    }
+
+    #padding_area {
+        display: none
+    }
+
+    ul {
+        overflow: hidden;
     }
 }
 
