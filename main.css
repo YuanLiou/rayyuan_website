@@ -1,34 +1,77 @@
 /* screen split size follow Bootsraps. */
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
 
 /*
 ** 預設為 > 992px
 */
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+   -webkit-font-smoothing: antialiased; 
+}
+
+#name_title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    color: #009D42;
+    font-weight: 700;
+   -webkit-font-smoothing: antialiased; 
+}
+
+body {
+    background: #F5F5F7;
+}
+
+#profile_photo {
+    position: absolute;
+    left: 0px;
+    top: -15px;
+    z-index: 1;
+}
+
+#profile {
+    border-radius: 20px;
+    width: 35%;
+    height: 35%;
+}
 
 #body_content {
+    position: relative;
     margin: auto;
     width: 60%;
-    background: white;
+    top: 100px;
+}
+
+.page_link {
+    color: inherit;
+}
+
+.page_link:hover {
+    color: #0091DB;
+}
+
+#icon_link {
+    display: flex;
+    align-items: center;
+}
+
+#icon_link > a {
+    margin: 8px;
 }
 
 .main_content {
-    width: 100%;
-    left: 30px;
     position: relative;
-    background: none;
-    -webkit-backdrop-filter: none; 
-    padding: 5px 15px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 0;
+    top: 50px;
+    left: 25px;
+    border-radius: 24px;
 }
 
-#xlarge_photo {
-    display: block;
-    max-height: 600px;
-    max-width: 216px;
-    float: left;
-}
-
-#small_photo {
-    display: none;
+.text_area {
+    margin-left: 100px;
+    padding-right: 20px;
 }
 
 #developing_word {
@@ -48,11 +91,13 @@
 #padding_area {
     height: 700px;
     width: 16px;
-    float: left;
 }
 
-ul {
-    overflow: hidden;
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 60px;
 }
 
 /*
