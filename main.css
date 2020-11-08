@@ -12,14 +12,15 @@ p {
 
 #name_title {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.3rem;
     color: #009D42;
     font-weight: 700;
-   -webkit-font-smoothing: antialiased; 
+    font-size: 1.3rem;
+    -webkit-font-smoothing: antialiased; 
 }
 
 body {
     background: #F5F5F7;
+    padding-bottom: 250px;
 }
 
 #profile_photo {
@@ -53,6 +54,7 @@ body {
 #icon_link {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #icon_link > a {
@@ -70,88 +72,72 @@ body {
 }
 
 .text_area {
+    margin-top: 0px;
     margin-left: 100px;
     padding-right: 20px;
 }
 
-#developing_word {
-    width: 100%;
-    text-align: left;
-    color: gray;
-    font-style: italic;
-    font-size: 0.8em;
-    margin-right: 12px;
-    float: left;
-}
-
-#site_states {
-    float: left;
-}
-
-#padding_area {
-    height: 700px;
-    width: 16px;
-}
-
 #footer {
-    position: absolute;
-    bottom: 0;
-    width: 80%;
-    height: 60px;
+    position: fixed;
+    bottom: 0px;
 }
 
 /*
 ** Large
 */
 @media screen and (max-width: 992px) {
+    p {
+        font-size: 1rem;
+    }
+
+    #profile_photo {
+        left: 0px;
+    }
+
+    #profile {
+        width: 35%;
+        height: 35%;
+    }
+
+    #name_title {
+        font-size: 1.3rem;
+    }
+
     #body_content {
         margin: auto;
-        width: 100%;
-        background: white;
+        width: 90%;
+    }
+
+    #body_content {
+        position: relative;
+        margin: auto;
+        width: 60%;
+        top: 100px;
     }
 
     .main_content {
-        width: 100%;
-        left: 30px;
         position: relative;
-        background: none;
-        -webkit-backdrop-filter: none; 
-        padding: 5px 15px;
+        padding: 10px 20px;
+        background: rgba(255, 255, 255, 0.9);
+        z-index: 0;
+        top: 50px;
+        left: 18px;
+        border-radius: 24px;
     }
 
-    #xlarge_photo {
-        display: block;
-        max-height: 600px;
-        max-width: 216px;
-        float: left;
+    .text_area {
+        margin-top: 0px;
+        margin-left: 100px;
+        padding-right: 20px;
     }
 
-    #small_photo {
-        display: none;
-    }
-
-    #developing_word {
-        width: 100%;
-        text-align: left;
-        color: gray;
-        font-style: italic;
-        font-size: 0.8em;
-        margin-right: 12px;
-        float: left;
+    #icon_link > a {
+        margin: 12px;
     }
 
     #site_states {
-        float: left;
-    }
-
-    #padding_area {
-        height: 700px;
-        width: 16px;
-        float: left;
-    }
-
-    ul {
-        overflow: hidden;
+        opacity: 0.5;
+        display: block;
     }
 }
 
@@ -159,32 +145,44 @@ body {
 ** Medium
  */
 @media screen and (max-width: 768px) {
-    #body_content {
-        margin: auto;
-        width: 100%;
-        background: white;
+    p {
+        font-size: 0.8rem;
     }
-    
+
+    #profile_photo {
+        left: 0px;
+    }
+
+    #profile {
+        width: 35%;
+        height: 35%;
+    }
+
+    #name_title {
+        font-size: 1rem;
+    }
+
+    #body_content {
+        position: relative;
+        margin: auto;
+        width: 75%;
+        top: 72px;
+    }
+
     .main_content {
         position: relative;
-        left: 0px;
-        margin-top: -450px;
+        padding: 10px 20px;
         background: rgba(255, 255, 255, 0.9);
-        -webkit-backdrop-filter: blur(5px); 
-        padding: 5px 15px;
-        float: none;
+        z-index: 0;
+        top: 50px;
+        left: 12px;
+        border-radius: 24px;
     }
 
-    #xlarge_photo {
-        display: block;
-        max-height: 600px;
-        max-width: 216px;
-        float: none;
-        padding-bottom: 0;
-    }
-
-    #small_photo {
-        display: none;
+    .text_area {
+        margin-top: 0px;
+        margin-left: 100px;
+        padding-right: 20px;
     }
 
     #developing_word {
@@ -196,15 +194,8 @@ body {
     }
 
     #site_states {
-        float: left;
-    }
-
-    #padding_area {
-        display: none
-    }
-
-    ul {
-        overflow: hidden;
+        opacity: 0.0;
+        display: none;
     }
 
 }
@@ -213,53 +204,41 @@ body {
 ** small screen
 */
 @media screen and (max-width: 576px) {
+    #profile_photo {
+        left: 4px;
+    }
+
+    #profile {
+        width: 30%;
+        height: 30%;
+    }
+    
     #body_content {
-        margin: auto;
-        width: 100%;
-        background: white;
-    }
-    
-    .main_content {
-        width: 100%;
-        bottom: 0;
         position: relative;
-        padding-top: 5px;
-        padding-left: 12px;
-        margin-top: 0px;
-        background: white;
-        -webkit-backdrop-filter: none; 
-        float: none;
-    }
-    
-    #xlarge_photo {
-        display: none;
-        float: none;
+        margin: auto;
+        width: 90%;
+        top: 48px;
     }
 
-    #small_photo {
-        display: block;
-        max-height: 161px;
-        max-width: 161px;
+    .main_content {
+        left: 8px;
+        position: relative;
+        padding: 10px 20px;
+        background: rgba(255, 255, 255, 0.9);
+        z-index: 0;
+        top: 50px;
+        border-radius: 24px;
     }
 
-    #developing_word {
-        color: gray;
-        font-style: italic;
-        font-size: 0.8em;
-        margin-right: 12px;
-        float: left;
+    .text_area {
+        margin-top: 64px;
+        margin-left: 0px;
+        padding-right: 8px;
     }
 
     #site_states {
-        float: left;
-    }
-
-    #padding_area {
-        display: none
-    }
-
-    ul {
-        overflow: hidden;
+        opacity: 0.0;
+        display: none;
     }
 }
 
